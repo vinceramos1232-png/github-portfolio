@@ -3,57 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">YourName<span>.</span></div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <canvas id="background"></canvas>
+
+  <header>
+    <h1 class="title">Hi, I'm <span>Your Name</span></h1>
+    <p class="subtitle">Web Developer • Designer • Coder</p>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
-      <h2 class="typewriter">I create clean and impactful digital experiences.</h2>
-      <a href="#projects" class="btn">Explore My Work</a>
-    </div>
-  </section>
-
-  <section id="about" class="about fade-in">
+  <section id="about">
     <h2>About Me</h2>
     <p>
-      I'm a software developer passionate about creating fast, elegant, and scalable web applications. 
-      I enjoy transforming ideas into digital experiences using modern technologies like JavaScript, React, and Node.js.
+      I'm a passionate developer who loves building modern and interactive web experiences. 
+      I enjoy working with HTML, CSS, and JavaScript to bring creative ideas to life.
     </p>
   </section>
 
-  <section id="projects" class="projects fade-in">
+  <section id="projects">
     <h2>Projects</h2>
-    <div id="repo-container" class="project-grid">
-      <!-- GitHub Repositories will be loaded here -->
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>A simple project description goes here.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>Another project description goes here.</p>
+      </div>
     </div>
   </section>
 
-  <section id="contact" class="contact fade-in">
-    <h2>Contact Me</h2>
-    <p>Let's connect and build something amazing together.</p>
-    <div class="socials">
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-      <a href="mailto:you@example.com">Email</a>
-    </div>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out:</p>
+    <a href="mailto:youremail@example.com" class="contact-btn">Email Me</a>
   </section>
 
   <footer>
-    <p>© 2025 Your Name — Crafted with 💻 and ☕</p>
+    <p>© 2025 Your Name. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
