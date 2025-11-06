@@ -1,63 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <header>
+        <div class="container">
+            <h1>[Vince Aaron Ramos]</h1>
+            <p>Passionate [Your Title, e.g., Front-End Developer] | Building sleek and functional web experiences.</p>
+            <div class="social-links">
+                <a href="[Your GitHub URL]" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="[Your LinkedIn URL]" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:[Your Email]" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <h1>Hello, I'm <span>Vince Aaron Ramos</span></h1>
-    <p>Web Developer • Designer • Coder</p>
-  </header>
+    <section id="projects" class="container">
+        <h2>🚀 Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card" data-project-id="project1">
+                <h3>Project Title One</h3>
+                <p>A brief, compelling description of the project and your role. Highlight key technologies used.</p>
+                <a href="[Project Live Demo URL]" target="_blank" class="live-link">Live Demo</a>
+                <a href="[Project GitHub Repo URL]" target="_blank" class="repo-link">View Code</a>
+            </div>
+            <div class="project-card" data-project-id="project2">
+                <h3>Project Title Two</h3>
+                <p>An innovative application built with a modern stack like React/Vue/Node.js. Focus on impact.</p>
+                <a href="[Project Live Demo URL]" target="_blank" class="live-link">Live Demo</a>
+                <a href="[Project GitHub Repo URL]" target="_blank" class="repo-link">View Code</a>
+            </div>
+            </div>
+    </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a passionate web developer creating interactive and beautiful websites.
-      Skilled in HTML, CSS, and JavaScript.
-    </p>
-  </section>
+    <footer>
+        <p>&copy; <span id="current-year"></span> [Your Name]. Crafted with <i class="fas fa-heart"></i> and code.</p>
+    </footer>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-container">
-      <div class="project-card">
-        <h3>Project One</h3>
-        <p>A cool project description here.</p>
-      </div>
-      <div class="project-card">
-        <h3>Project Two</h3>
-        <p>Another awesome project description here.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Get in touch:</p>
-    <a href="mailto:youremail@example.com" class="contact-btn">Email Me</a>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Your Name. All Rights Reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
