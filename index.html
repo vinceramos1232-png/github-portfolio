@@ -4,100 +4,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vince Aaron Ramos | Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: "Poppins", sans-serif;
-      color: #fff;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    header {
-      margin-bottom: 40px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    p.subtitle {
-      font-size: 1.2rem;
-      color: #e0e0e0;
-      margin-top: 0;
-    }
-
-    section {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 12px;
-      padding: 20px;
-      max-width: 600px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      margin-top: 0;
-      color: #fff;
-    }
-
-    a {
-      color: #ffd700;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      margin-top: auto;
-      color: #e0e0e0;
-      font-size: 0.9rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <header>
-    <h1>Vince Aaron</h1>
-    <p class="subtitle">Web Developer | Student | I.T</p>
+  <header class="navbar">
+    <div class="logo">Vince Aaron<span>.</span></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
+  <section class="hero">
+    <div class="hero-content">
+      <img src="assets/profile.jpg" alt="Profile" class="profile-pic" />
+      <h1>Hi, I'm <span class="highlight">Vince Aaron Ramos</span></h1>
+      <h2 class="typewriter">I build beautiful web experiences ✨</h2>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <section id="about" class="about fade-in">
     <h2>About Me</h2>
     <p>
-      I am a calm and thoughtful person who enjoys helping others and learning new things.
-      I’m dependable, creative, and love building clean, user-friendly websites.
+      I'm a passionate web developer who loves creating interactive, modern, and aesthetic websites.
+      I enjoy working with HTML, CSS, JavaScript, and React. I’m constantly learning and building new things.
     </p>
   </section>
 
-  <section>
+  <section id="projects" class="projects fade-in">
     <h2>Projects</h2>
-    <p><strong>Project One:</strong> A simple web app built with HTML, CSS, and JavaScript.  
-      <a href="https://github.com/username/project-one" target="_blank">View on GitHub</a></p>
-    <p><strong>Project Two:</strong> A fun project exploring animations and responsive design.  
-      <a href="https://github.com/username/project-two" target="_blank">View on GitHub</a></p>
+    <div class="project-grid" id="repo-container">
+      <!-- GitHub repos will load here -->
+    </div>
   </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>
-      📧 <a href="vince.ramos132.com">youremail@example.com</a><br>
-      🌐 <a href="https://github.com/username" target="_blank">github.com/username</a>
-    </p>
+  <section id="contact" class="contact fade-in">
+    <h2>Contact Me</h2>
+    <p>Let’s collaborate or just say hello 👋</p>
+    <div class="socials">
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+      <a href="mailto:you@example.com">Email</a>
+    </div>
   </section>
 
   <footer>
-    © 2025 VINCE AARON RAMOS | Built with ❤️ and HTML
+    <p>© 2025 Vince Aaron | Built with ❤️ using HTML, CSS, and JS</p>
   </footer>
-
 </body>
 </html>
