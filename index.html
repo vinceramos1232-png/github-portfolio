@@ -3,202 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>My GitHub Portfolio</title>
+    <style>
+        /* ===== CSS goes here ===== */
+        body, h1, h2, h3, p, a { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        body { line-height: 1.6; background-color: #f4f4f4; color: #333; }
+        header { background-color: #333; color: #fff; text-align: center; padding: 2rem 0; }
+        header h1 { font-size: 2.5rem; }
+        nav { background: #444; display: flex; justify-content: center; gap: 2rem; padding: 1rem 0; }
+        nav a { color: #fff; text-decoration: none; font-weight: bold; }
+        nav a:hover { color: #00bfff; }
+        section { padding: 2rem; max-width: 800px; margin: auto; }
+        .project { background: #fff; padding: 1rem; margin-bottom: 1rem; border-radius: 5px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+        .project a { color: #00bfff; text-decoration: none; }
+        footer { text-align: center; padding: 1rem; background: #333; color: #fff; }
+    </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>[Vince Aaron Ramos]</h1>
-            <p>Passionate [Your Title, e.g., Front-End Developer] | Building sleek and functional web experiences.</p>
-            <div class="social-links">
-                <a href="[Your GitHub URL]" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="[Your LinkedIn URL]" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:[Your Email]" title="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
+        <h1>Hi, I'm Vince Aaron Ramos</h1>
+        <p>Web Developer | Programmer | Tech Enthusiast</p>
     </header>
 
-    <section id="projects" class="container">
-        <h2>🚀 Featured Projects</h2>
-        <div class="project-grid">
-            <div class="project-card" data-project-id="project1">
-                <h3>Project Title One</h3>
-                <p>A brief, compelling description of the project and your role. Highlight key technologies used.</p>
-                <a href="[Project Live Demo URL]" target="_blank" class="live-link">Live Demo</a>
-                <a href="[Project GitHub Repo URL]" target="_blank" class="repo-link">View Code</a>
-            </div>
-            <div class="project-card" data-project-id="project2">
-                <h3>Project Title Two</h3>
-                <p>An innovative application built with a modern stack like React/Vue/Node.js. Focus on impact.</p>
-                <a href="[Project Live Demo URL]" target="_blank" class="live-link">Live Demo</a>
-                <a href="[Project GitHub Repo URL]" target="_blank" class="repo-link">View Code</a>
-            </div>
-            </div>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate developer with experience in web development, coding, and open-source contributions. I love creating projects that solve real-world problems.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project One</h3>
+            <p>A brief description of your project.</p>
+            <a href="https://github.com/yourusername/project-one" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Project Two</h3>
+            <p>A brief description of your project.</p>
+            <a href="https://github.com/yourusername/project-two" target="_blank">View on GitHub</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
     </section>
 
     <footer>
-        <p>&copy; <span id="current-year"></span> [Your Name]. Crafted with <i class="fas fa-heart"></i> and code.</p>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // ===== JS goes here =====
+        console.log("Portfolio Loaded!");
+    </script>
 </body>
 </html>
-
-/* Custom properties for easy color changes */
-:root {
-    --primary-color: #0077B6; /* A nice blue for links/buttons */
-    --secondary-color: #00B4D8; /* A lighter blue */
-    --text-color: #E0E1DD;
-    --background-start: #0F2027; /* Dark start of the gradient */
-    --background-end: #203A43; /* Dark end of the gradient */
-    --card-bg: rgba(255, 255, 255, 0.1); /* Semi-transparent card background */
-    --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    /* The beautiful gradient background */
-    background: linear-gradient(135deg, var(--background-start) 0%, var(--background-end) 100%);
-    font-family: 'Poppins', sans-serif;
-    color: var(--text-color);
-    line-height: 1.6;
-    min-height: 100vh;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
-/* --- Header & Hero Section --- */
-header {
-    background-color: rgba(0, 0, 0, 0.4); /* Slightly darker transparent overlay */
-    padding: 60px 0;
-    text-align: center;
-    box-shadow: var(--shadow-light);
-}
-
-header h1 {
-    font-size: 3em;
-    margin-bottom: 5px;
-    color: white;
-}
-
-header p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    font-weight: 300;
-}
-
-.social-links a {
-    color: white;
-    font-size: 1.5em;
-    margin: 0 10px;
-    transition: color 0.3s ease-in-out;
-}
-
-.social-links a:hover {
-    color: var(--secondary-color);
-}
-
-/* --- Projects Section --- */
-#projects {
-    padding: 40px 0;
-}
-
-#projects h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: var(--secondary-color);
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.project-card {
-    background: var(--card-bg);
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: var(--shadow-light);
-    border-left: 5px solid var(--primary-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
-}
-
-.project-card h3 {
-    color: var(--secondary-color);
-    margin-bottom: 10px;
-}
-
-.project-card a {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 8px 15px;
-    margin-right: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-}
-
-.live-link {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-.live-link:hover {
-    background-color: #005A8D;
-}
-
-.repo-link {
-    background-color: transparent;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
-}
-
-.repo-link:hover {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-/* --- Footer --- */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    font-size: 0.9em;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-footer i {
-    color: #E74C3C; /* Red heart */
-}
-
-/* --- Media Queries (for responsiveness) --- */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 2.5em;
-    }
-
-    #projects h2 {
-        font-size: 2em;
-    }
-}
