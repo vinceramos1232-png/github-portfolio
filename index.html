@@ -46,3 +46,159 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+/* Custom properties for easy color changes */
+:root {
+    --primary-color: #0077B6; /* A nice blue for links/buttons */
+    --secondary-color: #00B4D8; /* A lighter blue */
+    --text-color: #E0E1DD;
+    --background-start: #0F2027; /* Dark start of the gradient */
+    --background-end: #203A43; /* Dark end of the gradient */
+    --card-bg: rgba(255, 255, 255, 0.1); /* Semi-transparent card background */
+    --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* The beautiful gradient background */
+    background: linear-gradient(135deg, var(--background-start) 0%, var(--background-end) 100%);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* --- Header & Hero Section --- */
+header {
+    background-color: rgba(0, 0, 0, 0.4); /* Slightly darker transparent overlay */
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: var(--shadow-light);
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 5px;
+    color: white;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* --- Projects Section --- */
+#projects {
+    padding: 40px 0;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: var(--secondary-color);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-light);
+    border-left: 5px solid var(--primary-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.project-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.live-link {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.live-link:hover {
+    background-color: #005A8D;
+}
+
+.repo-link {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.repo-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 0.9em;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer i {
+    color: #E74C3C; /* Red heart */
+}
+
+/* --- Media Queries (for responsiveness) --- */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    #projects h2 {
+        font-size: 2em;
+    }
+}
